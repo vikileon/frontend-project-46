@@ -5,8 +5,8 @@ import { Command } from 'commander';
 const program = new Command();
 
 program
-    .version('0.0.1')
-    .description('Compares two configuration files and shows a difference')
-    .option('-h, --help', 'display help for command')
+  .version('1.0.0')
+  .description('Compares two configuration files and shows a difference')
+  .option('-f, --format <type>', 'output format', 'stylish');
 
 program.parse();
